@@ -1,4 +1,4 @@
-resource "azurerm_resource_group" "RKE-RG" {
+resource "azurerm_resource_group" "RKERG" {
   name = var.rgname
   location = var.rglocation
 }

@@ -17,7 +17,7 @@ variable "vnetlocation" {
   
 }
 
-variable "address_space" {
+variable "addressspace" {
   
 }
 
@@ -29,14 +29,41 @@ variable "pubsubnetaddr" {
   
 }
 
-variable "prisubnet" {
+# variable "prisubnet" {
   
-}
+# }
 
-variable "prisubnetaddr" {
+# variable "prisubnetaddr" {
   
-}
+# }
 
 variable "environment" {
+  
+}
+
+#networkinterface variables
+variable "networkinterface" {
+  
+}
+
+variable "niclocation" {
+  
+}   
+
+variable "nicipconfigname" {
+  
+}
+
+# virtual machines variables
+
+variable "RKE_MASTER" {
+  
+}
+
+variable "vmsize" {
+  
+}   
+
+variable "pipname" {
   
 }
