@@ -14,5 +14,9 @@
 - Get Control Plane IP Addresses
 
 ```
-terraform apply -target output.pip | awk '/([0-9]{1,3}\.){3}[0-9]{1,3}/ {print $0}' |awk -F '"' '{print $2}' >> iplist.txt
+rm -rf iplist.txt && terraform apply -target output.pip | awk '/([0-9]{1,3}\.){3}[0-9]{1,3}/ {print $0}' |awk -F '"' '{print $2}' >> iplist.txt
 ```
+
+
+docker stop rke-worker-port-listener rke-cp-port-listener rke-etcd-port-listener
+

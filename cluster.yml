@@ -2,19 +2,19 @@ ssh_key_path: /Users/hemasivakishorevuyyuru/Desktop/Pract/RKE_Azure/rkeprikey.pe
 cluster_name: itzhskcluster
 kubernetes_version: v1.26.7-rancher1-1
 nodes:
-    - address: 20.124.103.101
+    - address: 20.228.172.199
       user: adminuser
       role:
         - controlplane
         - etcd
         - worker
-    - address: 20.121.39.65
+    - address: 20.228.170.252
       user: adminuser
       role:
         - controlplane
         - etcd
         - worker
-    - address: 20.121.32.51
+    - address: 20.231.37.201
       user: adminuser
       role:
         - controlplane
@@ -31,7 +31,7 @@ nodes:
     # - address: 184.72.181.24
     #   user: ubuntu
     #   role:
-        - worker
+    #    - worker
   # - address: 54.167.242.61
   #   hostname_override: worker01
   #   #internal_address: 172.16.42.73
@@ -68,7 +68,7 @@ ingress:
 network:
   plugin: flannel
   options:
-    flannel_iface: ens5
+    flannel_iface: eth0
     flannel_backend_type: vxlan
     flannel_autoscaler_priority_class_name: system-cluster-critical # Available as of RKE v1.2.6+
     flannel_priority_class_name: system-cluster-critical # Available as of RKE v1.2.6+
