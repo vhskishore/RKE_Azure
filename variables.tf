@@ -67,3 +67,7 @@ variable "vmsize" {
 variable "pipname" {
   
 }
+
+variable "pipwname" {
+  
+}
